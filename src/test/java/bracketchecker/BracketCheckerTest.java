@@ -15,7 +15,7 @@ public class BracketCheckerTest {
      * @throws Exception the exception
      */
     @Test
-    public void whenCheckQuantityWrongThenFalse() throws Exception {
+    public void whenCheckQuantityWrongThenFalseTest() throws Exception {
         BracketChecker bc = new BracketChecker();
 
         assertThat(bc.checkQuantity("{[1, 3, 5]]}"), is(false));
@@ -27,7 +27,7 @@ public class BracketCheckerTest {
      * @throws Exception the exception
      */
     @Test
-    public void whenCheckQuantityCorrectThenTrue() throws Exception {
+    public void whenCheckQuantityCorrectThenTrueTest() throws Exception {
         BracketChecker bc = new BracketChecker();
 
         assertThat(bc.checkQuantity("{([1, 1, 1], [2, 2]), ([3])}"), is(true));
@@ -39,7 +39,7 @@ public class BracketCheckerTest {
      * @throws Exception the exception
      */
     @Test
-    public void whenCheckBalanceCorrectThenTrue1() throws Exception {
+    public void whenCheckBalanceCorrectThenTrue1Test() throws Exception {
         BracketChecker bc = new BracketChecker();
 
         assertThat(bc.checkBalance("([])"), is(true));
@@ -51,7 +51,7 @@ public class BracketCheckerTest {
      * @throws Exception the exception
      */
     @Test
-    public void whenCheckBalanceCorrectThenTrue2() throws Exception {
+    public void whenCheckBalanceCorrectThenTrue2Test() throws Exception {
         BracketChecker bc = new BracketChecker();
 
         assertThat(bc.checkBalance("{([1, 1, 1], [2, 2]), ([3])}"), is(true));
@@ -63,7 +63,7 @@ public class BracketCheckerTest {
      * @throws Exception the exception
      */
     @Test
-    public void whenCheckBalanceWrongThenFalse1() throws Exception {
+    public void whenCheckBalanceWrongThenFalse1Test() throws Exception {
         BracketChecker bc = new BracketChecker();
 
         assertThat(bc.checkBalance("([(]"), is(false));
@@ -75,7 +75,7 @@ public class BracketCheckerTest {
      * @throws Exception the exception
      */
     @Test
-    public void whenCheckBalanceWrongThenFalse2() throws Exception {
+    public void whenCheckBalanceWrongThenFalse2Test() throws Exception {
         BracketChecker bc = new BracketChecker();
 
         assertThat(bc.checkBalance("{([}1, 1, 1], [2, 2]), ([3])}"), is(false));
@@ -87,7 +87,7 @@ public class BracketCheckerTest {
      * @throws Exception the exception
      */
     @Test
-    public void whenTotalCheckStringWithWrongQuantityThenFalse() throws Exception {
+    public void whenTotalCheckStringWithWrongQuantityThenFalseTest() throws Exception {
         BracketChecker bc = new BracketChecker();
 
         assertThat(bc.check("{rock]},{pop}"), is(false));
@@ -99,7 +99,7 @@ public class BracketCheckerTest {
      * @throws Exception the exception
      */
     @Test
-    public void whenTotalCheckStringWithCorrectQuantityButWrongBalanceThenFalse() throws Exception {
+    public void whenTotalCheckStringWithCorrectQuantityButWrongBalanceThenFalseTest() throws Exception {
         BracketChecker bc = new BracketChecker();
 
         assertThat(bc.check("[{rock}],[{pop]}"), is(false));

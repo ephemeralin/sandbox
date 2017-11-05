@@ -1,8 +1,8 @@
 /**
-* Tests for Bracket Checker.
+* Tests for Periods Crossing Checker.
 *
 * @author ephemeralin (mailto:ephemeralin@gmail.com)
 * @version $Id$
 * @since 0.1
 */
-package bracketchecker;
+package periodscrossingchecker;
