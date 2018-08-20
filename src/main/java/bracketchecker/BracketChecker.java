@@ -7,12 +7,10 @@ import java.util.LinkedList;
  */
 public class BracketChecker {
 
-
     /**
      * Main check method.
      * First checking quantity of brackets.
      * If correct, then checking its balance.
-     *
      * @param st the checking string
      * @return boolean
      */
