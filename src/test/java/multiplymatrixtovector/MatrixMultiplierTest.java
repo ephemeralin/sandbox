@@ -1,12 +1,18 @@
-package multiplyMatrixToVector;
+package multiplymatrixtovector;
 
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
+/**
+ * The Matrix multiplier test.
+ */
 public class MatrixMultiplierTest {
 
+    /**
+     * Multiply matrix to vector.
+     */
     @Test
     public void multiplyMatrixToVector() {
         int[][] matrix = {{2, 4, 0}, {-2, 1, 3}, {-1, 0, 1}};

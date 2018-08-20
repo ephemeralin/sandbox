@@ -1,23 +1,45 @@
 
 package ex;
 
-class A {}
+/**
+ * The type A.
+ */
+class A { }
 
-class B extends A{}
+/**
+ * The type B.
+ */
+class B extends A { }
 
+/**
+ * The type Ex.
+ */
 public class Ex {
 
-
-    static void foo (A a) {
+    /**
+     * Foo.
+     *
+     * @param a the a
+     */
+    static void foo(A a) {
         System.out.println("foo A");
     }
 
-    static void foo (B b) {
+    /**
+     * Foo.
+     *
+     * @param b the b
+     */
+    static void foo(B b) {
         System.out.println("foo B");
     }
 
 
-
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         A a = new B();
         foo(a);
