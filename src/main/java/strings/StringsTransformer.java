@@ -5,7 +5,7 @@ package strings;
  */
 public class StringsTransformer {
     /**
-     * First letters get capital.
+     * First letters getRecur capital.
      * First split split string into array of strings using 'space'-separator
      * Then construct new string with changing first letter into upper case
      * @param s input string
